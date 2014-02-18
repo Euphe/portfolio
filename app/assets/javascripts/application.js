@@ -22,55 +22,62 @@
 
     // Listen for the jQuery ready event on the document
     $(function () {
-        
+        var defclr;
         $('.circle').hover(function(){
+            defclr = $(this).css('color');
             $(this).css('background', '#edeaea');
             $(this).find('p').css('color', 'black');
             $(this).find('.desc').fadeIn();
         }, function(){
             $(this).css('background', 'none');
-            $(this).find('p').css('color', '#edeaea');
+            $(this).find('p').css('color', defclr);
             $(this).find('.desc').fadeOut();
                         }
             );
         var mainx = 100,
             mainy = 100;
-        var its = 5;
+        var its = 1;
         var lines = [
-
-        {
-            x1: 340,
-            y1: 170,
-            x2: 400,
-            y2: 110
-        }, {
-            x1: 380,
-            y1: 250,
-            x2: 460,
-            y2: 250
-        }, {
-            x1: 340,
-            y1: 340,
-            x2: 400,
-            y2: 400
-        },
-
-        {
-            x1: 170,
-            y1: 340,
-            x2: 110,
-            y2: 400
-        }, {
-            x1: 130,
-            y1: 250,
-            x2: 50,
-            y2: 250
-        }, {
-            x1: 170,
-            y1: 170,
-            x2: 110,
-            y2: 110
-        },
+           {
+              x1: 340,
+              y1: 170,
+              x2: 400,
+              y2: 110
+          },
+          {
+              x1: 380,
+              y1: 260,
+              x2: 460,
+              y2: 260
+          }, 
+          /*
+          {
+              x1: 340,
+              y1: 340,
+              x2: 400,
+              y2: 400
+          },
+  
+          {
+              x1: 170,
+              y1: 340,
+              x2: 110,
+              y2: 400
+          }, 
+          */
+          {
+              x1: 130,
+              y1: 260,
+              x2: 50,
+              y2: 260
+          }, 
+          {
+              x1: 170,
+              y1: 170,
+              x2: 110,
+              y2: 110
+          },
+        
 
         ];
 
@@ -127,7 +134,7 @@
         var rad = Math.acos(cosb);
         var deg = (rad * 180) / Math.PI;
 
-        htmlns = "http://www.w3.org/1999/xhtml";
+        //htmlns = "http://www.w3.org/1999/xhtml";
         div = document.createElementNS(htmlns, "div");
         div.setAttribute('style', 'border:3px solid white;border-radius:40%;width:' + width + 'px;height:0px;-moz-transform:rotate(' + deg + 'deg);-webkit-transform:rotate(' + deg + 'deg);position:absolute;top:' + y + 'px;left:' + x + 'px;');
         div.setAttribute('class', 'line');
