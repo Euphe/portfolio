@@ -134,7 +134,7 @@
         var rad = Math.acos(cosb);
         var deg = (rad * 180) / Math.PI;
 
-        //htmlns = "http://www.w3.org/1999/xhtml";
+        htmlns = "http://www.w3.org/1999/xhtml";
         div = document.createElementNS(htmlns, "div");
         div.setAttribute('style', 'border:3px solid white;border-radius:40%;width:' + width + 'px;height:0px;-moz-transform:rotate(' + deg + 'deg);-webkit-transform:rotate(' + deg + 'deg);position:absolute;top:' + y + 'px;left:' + x + 'px;');
         div.setAttribute('class', 'line');
