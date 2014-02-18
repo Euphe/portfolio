@@ -10,6 +10,9 @@ Portfolio::Application.routes.draw do
   
   get 'experiments' => 'experiment#index'
   get 'experiment/:id' => 'experiment#show'
+  
+  get 'contact' => 'contact#index'
+  get 'info' => 'info#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
