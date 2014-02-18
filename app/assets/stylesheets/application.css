@@ -35,8 +35,11 @@ body {
     height:32em;
     border-radius:50%;
     
-    margin:0 0 0 33%;
+    margin:0 0 0 32em;
     
+}
+#wrapper a {
+   text-decoration:none; 
 }
 #logo {
     width:12em;
@@ -66,8 +69,9 @@ body {
 }
 .circle .desc {
     display:none;
-    text-decoration:underline;   
-    padding:5px;
+    position:absolute;
+    top:0;
+
     color:black;
 }
 
@@ -103,7 +107,7 @@ body {
   
 	font-size:20pt !important;
 
-  margin-top:23%;
+  margin-top:29%;
  
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
