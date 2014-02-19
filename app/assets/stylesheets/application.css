@@ -12,6 +12,62 @@
  *= require_tree .
  */
 
+
+.container {
+  
+  width:45%;
+  margin:auto;
+  
+}
+.block {
+    background:white;
+    padding:10px;
+    
+
+    
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.79);
+    -moz-box-shadow:    0px 0px 4px 0px rgba(50, 50, 50, 0.79);
+    box-shadow:         0px 0px 4px 0px rgba(50, 50, 50, 0.79);
+    
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+
+    .block .header {
+        border-bottom:2px dashed black;
+        margin-bottom:10px;
+    }
+
+        .block .header h2{
+            
+         margin:10px 0 5px 0; 
+        }
+
+    .block .content {
+        
+        
+    }    
+        .block .content img:hover{
+            -webkit-box-shadow: 0px 0px 4px 0px #F78538;
+            -moz-box-shadow:    0px 0px 4px 0px #F78538;
+            box-shadow:         0px 0px 4px 0px #F78538;
+        }
+        .block .content .thumb{
+            max-width:100%;
+            max-height:300px;
+
+        }
+        .block .content .large{
+                    max-width:100%;
+        
+        
+        }
+        .block .content p{
+                
+                
+            }
+
 @font-face {
     	font-family: 'icomoon';
       src:url('https://dl.dropboxusercontent.com/u/14273442/font/portfolio/icomoon.eot?-nv2bar');
@@ -28,73 +84,6 @@
 body {
     background:#FFAD54;
 }
-
-#wrapper {
-    position:relative;
-    width:32em;
-    height:32em;
-    border-radius:50%;
-    
-    margin:0 0 0 32em;
-    
-}
-#wrapper a {
-   text-decoration:none; 
-}
-#logo {
-    width:12em;
-    height:12em;
-    margin:-6em;
-}
-.circle:hover, .circle p:hover {
-
-
-}
-.circle {
-    position:absolute;
-    top:50%;
-    left:50%;
-    width: 4em;
-    height: 4em;
-    margin:-2em;
-    border-radius:50%;
-    border:5px solid #edeaea;
-    text-align:center;
-    cursor:pointer;
-}
-.circle p {
-    color:black;
-    font-weight:bold;
-    font-size:15pt;
-}
-.circle .desc {
-    display:none;
-    position:absolute;
-    top:0;
-
-    color:black;
-}
-
-.deg0 {
-    transform: translate(16em);
-}
-/* 12em = half the width of the wrapper */
- .deg45 {
-    transform: rotate(45deg) translate(16em) rotate(-45deg);
-}
-.deg135 {
-    transform: rotate(135deg) translate(16em) rotate(-135deg);
-}
-.deg180 {
-    transform: translate(-16em);
-}
-.deg225 {
-    transform: rotate(225deg) translate(16em) rotate(-225deg);
-}
-.deg315 {
-    transform: rotate(315deg) translate(16em) rotate(-315deg);
-}
-
 
 
 [class^="icon-"], [class*=" icon-"] {
