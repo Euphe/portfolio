@@ -3,25 +3,30 @@
       <p>Boris Tsejtlin:<br/>
       Web Developer</p>
     </div>
-    <div class=' circle deg0'>
-     <a href="<%=contact_path%>">
-      <p class="icon-user" ></p> <p class="desc " style="right:-50px;">Info</p>
-     </a>
-    </div>
-    <div class=' circle deg180'>
-      <a href="<%=info_path%>">
-        <p class='icon-newspaper'></p> <p class='desc ' style="left:-50px;">Blog</p>
-      </a>
-    </div>
+    <a href="<%=info_path%>">
+      <div class=' circle deg0'>
+       
+        <p class="icon-user" ></p> <p class="desc " style="right:-50px;">Info</p>
+      
+      </div>
+    </a>
+    <a href="<%=contact_path%>">
+      <div class=' circle deg180'>
+      
+          <p class='icon-newspaper'></p> <p class='desc ' style="left:-50px;">Blog</p>
+       
+      </div>
+    </a>
+    <a href="<%=experiments_path%>">
     <div class=' circle deg225'>
-      <a href="<%=experiments_path%>">
          <p class='icon-cogs'></p> <p class='desc  ' style="left:-120px;">Experiments</p>
-      </a>
     </div>
-    <div class=' circle deg315'>
-      <a href="<%=projects_path%>">
-      <p class='icon-images'></p> <p class='desc ' style="right:-85px;">Projects</p>
-      </a>
-    </div>
+    </a>
+    <a href="<%=projects_path%>">
+      <div class=' circle deg315'>
+        <p class='icon-images'></p> <p class='desc ' style="right:-85px;">Projects</p>
+        
+      </div>
+    </a>
     <div id="lines"></div>
 </div>
